@@ -48,7 +48,7 @@
 
     <div className="w-6/12  flex justify-center " id='rightpartofhome'>
     
-    <img id='std' src='./Pics/std.png' alt="student" srcset="" />
+    <img id='std' src='/Pics/std.png' alt="student" srcset="" />
     
     </div>
     
