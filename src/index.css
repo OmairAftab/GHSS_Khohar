@@ -1,0 +1,521 @@
+@import "tailwindcss";
+
+* {
+ margin: 0; padding: 0;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+
+html, body {
+  
+  height: 100%;
+  width: 100%;
+}
+
+body{
+ 
+  background-image: url('/Pics/images2.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+
+
+
+/* navbar for hamburger */
+#sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 230px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.421);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 23px;
+padding-left: 20px !important;
+ font-size: large;
+}
+
+#sidebar Link{
+  width: 100%;
+}
+
+
+
+#mainheading{
+  font-size: 3.2vmax;
+}
+
+#line{
+  font-size: 1.3vmax;
+}
+
+#change{
+  text-align: center;
+}
+
+
+/* nav{
+  padding: 10px;
+  
+}
+*/
+
+#navlinks a:hover{
+  transform: scale(1.25);
+  transition: transform 0.3s ease-in;
+} 
+
+.sp{
+  color: #270BFB;
+}
+
+#upperpart{
+  margin-top: 2vh;
+  padding: 6vh 10vw;
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+
+#mission , #vision{
+  font-size: 2vw;
+}
+
+#lowerpart{
+  padding-top: 25px;
+  
+  flex-wrap: wrap; /* allow wrapping for small screens */
+  gap: 20px; /* space between boxes */
+}
+
+#ss{
+word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  white-space: normal;
+}
+
+#leftpart , #rightpart{
+   background-color: #ECF7FA;
+  width: 19vw;
+  height: 31vh;
+  border-radius: 15px;
+
+  min-width: 200px; /* ensures it doesn’t shrink too much */
+}
+
+#academicsfirstblock{
+  padding-bottom: 20px;
+}
+
+/* academics page  */
+
+/* #firstblockleftside , #secondblockleftside{
+  background-color: #ECF7FA;
+  width: 30vw;
+  height: 20vw;
+  min-width: 250px; 
+} */
+
+#firstblockleftside,
+#secondblockleftside {
+    border-radius: 10px;
+  max-width: 900px;
+    background-color: #ECF7FA;
+}
+
+#middleschoolpic,
+#highchoolpic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* #middleschoolpic ,#highchoolpic{
+   width: 30vw;
+  height: 34vh;
+  min-width: 250px; 
+} */
+
+#heading{
+  font-size: 2vmax;
+}
+
+form {
+  background: #ECF7FA;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group label span {
+  color: red;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 12px;
+  background: #001f54;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: #003366;
+}
+
+
+
+#picbg{
+  background-color: #ECF7FA;
+}
+
+#picbg img{
+  margin-left: 56px !important;
+}
+
+#para1{
+  font-size: 1.3vmax;
+}
+
+
+
+/* dont show menu option on large screen */
+#menubar{
+  display: none;
+}
+
+
+
+
+
+@media (max-width:768px) {
+
+  
+
+  #navlinks{
+    display: none;
+  }
+
+  #mainheading{
+    font-size: 3.3vw;
+  }
+
+  #picsathomepage{
+    /* flex-wrap: nowrap; */
+  }
+
+  #picsathomepage img{
+    width: 6vw;
+    margin-left: 1vw;
+  }
+  
+  #picsathomepage h1{
+    font-size: 1.4vw;
+  }
+
+  #picsathomepage div{
+    width: 3vw;
+    gap: 1vw;
+  }
+
+  #line{
+   font-size: 2vw;
+  }
+
+  #leftpartofhome{
+    width: 60%;
+ }
+
+ #rightpartofhome img {
+  max-width: 100%;
+  /* height: auto; */
+  margin-right: 2vw;
+   object-fit: cover; 
+}
+
+#upperpart{
+  font-size: 2.2vw;
+}
+
+#mission , #vision{
+  font-size: 3vw;
+}
+
+#statement{
+  font-size: 2vw;
+}
+
+#picbg{
+  width: 23vw;
+  height: 25vw;
+  margin: 10px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#picbg img{
+ height: 13vw;
+ width: 13vw;
+ margin-left: 6vw  !important;
+}
+
+#picbg h1{
+  font-size: 3vw;
+}
+
+#picbg h3{
+font-size: 2vw;
+}
+
+form{
+  
+  max-width: 480px;
+  margin-top: 14px;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+
+form h2{
+  margin-bottom: 5px;
+  padding-top: 0px ;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 70px;
+}
+
+
+.form-group label {
+  margin-bottom: 2px;
+}
+
+.form-group input{
+  height: 7vh;
+}
+
+form{
+  border-radius: 10px;
+}
+
+
+/* //academics page */
+#academicsfirstblock,
+  #academicssecondblock {
+    flex-direction: column;    /* stack items */
+    align-items: center;
+    gap: 20px;                 /* reduce spacing */
+    text-align: center;
+  }
+
+  #firstblockleftside,
+  #secondblockleftside {
+    padding: 10px;
+    /* margin-right: 60px; */
+  }
+
+  #heading {
+    font-size: 1.2rem;
+  }
+
+  #bigbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #para1 {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+
+
+  /* setting hamburger menu */
+  #menubar{
+    display: block;
+  }
+
+}
+
+
+
+/* for medium mobile phones */
+@media (max-width: 430px) {
+
+  /* FOR HOME PAGE */
+
+
+  #leftpartofhome{
+    padding-top: 20px;
+  }
+
+  #picsathomepage div{
+     width: 6vw;
+    gap: 1vw;
+  
+  }
+
+   #picsathomepage div h1{
+    font-size: 1.8vw;
+    text-align: center;
+   }
+
+#firstleft{
+  padding:0px !important;
+  justify-content: space-around;
+}
+
+#mainheading{
+  font-size: large;
+}
+ 
+#line{
+  font-size: 2.8vw;
+  padding-left: 4px ;
+}
+
+
+
+/* About Page  */
+#upperpart{
+  font-size: 3vw;
+}
+
+#lowerpart{
+  padding-top: 25px;
+  gap: 10px; /* space between boxes */
+}
+
+#leftpart , #rightpart{
+   background-color: #ECF7FA;
+  width: 10vw;
+  height: 22vh;
+  border-radius: 15px;
+  
+  min-width: 150px; /* ensures it doesn’t shrink too much */
+}
+
+#mission , #vision { 
+  font-size: 5vw;
+}
+
+#ss{
+  font-size: 10px; 
+  
+}
+
+  /* ACADEMICS PAGE  */
+  #heading {
+    font-size: 1rem;
+  }
+
+  #para1 {
+    font-size: 0.85rem;
+  }
+
+
+  /* faculty page */
+  #faculty{
+    gap: 5px;
+  }
+
+  #picbg{
+    margin: 1px !important;
+  }
+
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  /* Styles only for devices between 769px and 1024px */
+
+
+  /* for home page  */
+   #picsathomepage div{
+    width: 4vw;
+    gap: 1vw;
+  }
+
+    #picsathomepage h1{
+    font-size: 1.2vw;
+    text-align: center;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  #ss{
+    font-size: 2.7vh;
+  }
+
+}
+
+
+@media (max-width: 350px) {
+
+ #piconnav{
+  width: 70px;
+  height: 70px;
+ }
+
+ #headingonnav{
+  font-size: 25px;
+ }
+
+
+
+}
