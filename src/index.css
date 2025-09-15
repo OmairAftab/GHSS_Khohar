@@ -395,10 +395,7 @@ form{
   /* FOR HOME PAGE */
 
    #rightpartofhome img {
-  max-width: 100%;
-  height: auto;
-  margin-right: 2vw;
-   object-fit: contain; 
+
 }
 
 
