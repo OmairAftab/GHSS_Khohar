@@ -433,7 +433,8 @@ form{
 
 /* About Page  */
 #upperpart{
-  font-size: 3vw;
+  font-size: 3.4vw;
+  font-weight: bold;
 }
 
 #lowerpart{
