@@ -394,10 +394,9 @@ form{
 
   /* FOR HOME PAGE */
 
-   #rightpartofhome img {
-
+#line{
+  font-weight: bold;
 }
-
 
 
   #leftpartofhome{
